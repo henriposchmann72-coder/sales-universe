@@ -2163,11 +2163,12 @@ p { text-wrap: pretty; }
 
 
   // Videos auf der Seite: Szenen aus HTML und CSS, Stimme je Satz als Aufnahme
-  // (Higgsfield, ElevenLabs), Soundeffekte aus einer Sammeldatei (Mixkit, freie Lizenz).
+  // (Higgsfield, ElevenLabs), Soundeffekte aus einer Sammeldatei (Mixkit, freie Lizenz),
+  // beides im Ordner ton/ auf unserem eigenen Server, keine Anfrage an fremde Server.
   // Geladen wird erst beim Klick auf „Video ansehen“. Lädt eine Aufnahme nicht,
   // spricht die Stimme des Geräts, das Video bleibt nie stumm.
-  const STIMME_URL = 'https://d8j0ntlcm91z4.cloudfront.net/user_3GXf0a2IUSvksHxeUEDyqFXz9fG/hf_';
-  const KLAENGE_URL = 'https://d2ol7oe51mr4n9.cloudfront.net/user_3GXf0a2IUSvksHxeUEDyqFXz9fG/5f16d090-ebbd-4122-acf7-99f105e3e912.mp3';
+  const STIMME_URL = 'ton/hf_';
+  const KLAENGE_URL = 'ton/klaenge.mp3';
   // Name: [Start in Sekunden, Länge]
   const KLAENGE = { intro: [0, 2.8], wusch: [3.2, 1.76], schlag: [5.357, 3], herz: [8.757, 2.6], taste: [11.757, 0.31], plopp: [12.463, 0.38], tippen: [13.244, 1.3], glitzer: [14.944, 2.6], nachricht: [17.944, 1.06], richtig: [19.403, 1.96], swoosh: [21.763, 1.39], erfolg: [23.553, 1.8] };
   const effekte = (() => {
